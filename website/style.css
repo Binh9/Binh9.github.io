@@ -1,0 +1,23 @@
+body {
+	align-items: center;
+}
+
+div {
+	border-style: ridge;
+}
+
+.welcome, .about_me, .projects, .contact {
+	text-align: center;
+	color: black;
+}
+
+.wrapper {
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.profile_picture {
+	border-radius: 50%;
+}
