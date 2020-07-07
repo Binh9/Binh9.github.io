@@ -10,7 +10,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: black;
-	border-style: none none inset none;
+	border-style: none none outset none;
 }
 
 .welcome {
@@ -43,6 +43,19 @@ body {
 }
 
 ul {
-	text-align: center;
-  	list-style: inside;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  	list-style: square inside;
+}
+
+.project {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: left;
+	text-align: left;
+	width: 700px;
+
 }
