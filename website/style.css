@@ -1,14 +1,23 @@
 body {
+	margin: 0;
 	align-items: center;
-}
-
-div {
-	border-style: ridge;
+	background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('images/white.jpg');
+	background-size: contain; 
 }
 
 .welcome, .about_me, .projects, .contact {
 	text-align: center;
+	align-items: center;
+	justify-content: center;
 	color: black;
+}
+
+.welcome {
+	display: flex;
+	height: 650px;
+	background-image: url('images/view.gif');
+	background-attachment: fixed;
+	background-size: cover; 
 }
 
 .wrapper {
@@ -18,6 +27,19 @@ div {
 	justify-content: center;
 }
 
+.left, .right {
+	margin: 20px;
+}
+
 .profile_picture {
 	border-radius: 50%;
+}
+
+.right {
+	max-width: 400px;
+}
+
+ul {
+	text-align: center;
+  	list-style: inside;
 }
