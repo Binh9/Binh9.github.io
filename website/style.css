@@ -10,6 +10,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	color: black;
+	border-style: none none inset none;
 }
 
 .welcome {
@@ -28,7 +29,8 @@ body {
 }
 
 .left, .right {
-	margin: 20px;
+	margin: 30px;
+	margin-left: 70px;
 }
 
 .profile_picture {
@@ -36,7 +38,8 @@ body {
 }
 
 .right {
-	max-width: 400px;
+	max-width: 500px;
+	text-align: left;
 }
 
 ul {
