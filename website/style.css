@@ -5,11 +5,26 @@ body {
 	background-size: contain; 
 }
 
-.welcome, .about_me, .projects, .contact {
+h2 {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.welcome, .about_me {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	color: black;
+	border-style: none none outset none;
+}
+
+.contact, .projects {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 10px;
 	border-style: none none outset none;
 }
 
@@ -43,11 +58,8 @@ body {
 }
 
 ul {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-  	list-style: square inside;
+	display: block;
+  	list-style: none;
 }
 
 .project {
@@ -57,5 +69,18 @@ ul {
 	justify-content: left;
 	text-align: left;
 	width: 700px;
+}
 
+.fa {
+
+	color: black;
+}
+
+.links {
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: black;
 }
