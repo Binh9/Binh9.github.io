@@ -1,10 +1,15 @@
 body {
 	margin: 0;
 	align-items: center;
-	background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)), url('images/white.jpg');
+	/* background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)), url('images/white.jpg'); */
+	background-color: #f5fafa;
 	background-size: contain; 
-	font-family: 'Kalam', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 200;
+}
+
+h1, h2 {
+	font-family: 'Kalam', sans-serif;
 }
 
 h1 {
@@ -21,7 +26,37 @@ h2 {
 	font-size: 35px;
 }
 
-.welcome, .about_me {
+#bar {
+	overflow: hidden;
+	background-color: #525454;
+}
+
+.sticky {
+ 	position: fixed;
+  	top: 0;
+  	width: 100%;
+}
+
+#nav {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+#nav li {
+	padding: 10px;
+}
+
+#nav li:hover {
+	background-color: #C6E9FF;
+}
+
+#nav li a {
+	color: white;
+}
+
+.welcome, #about_me {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -29,7 +64,7 @@ h2 {
 	border-style: none none outset none;
 }
 
-.contact, .projects {
+#contact, #projects {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -53,6 +88,8 @@ h2 {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .left, .right {
@@ -62,6 +99,18 @@ h2 {
 
 .profile_picture {
 	border-radius: 50%;
+}
+
+.left {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume {
+	padding-top: 15px;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 1.2em;
 }
 
 .right {
@@ -84,7 +133,6 @@ ul {
 }
 
 .fa {
-
 	color: black;
 }
 
