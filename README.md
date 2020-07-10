@@ -1,6 +1,6 @@
-#Personal Website
+# Personal Website
 
-###Content:
+### Content:
 - About me(bio)
 - Projects
 - Resume
