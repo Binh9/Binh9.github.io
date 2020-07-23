@@ -5,3 +5,6 @@
 - Projects
 - Resume
 - Contact info
+
+### Deployed at
+https://binh9.github.io/website/
