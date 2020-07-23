@@ -7,4 +7,4 @@
 - Contact info
 
 ### Deployed at
-https://binh9.github.io/website/
+https://binh9.github.io/
