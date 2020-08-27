@@ -1,5 +1,11 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	height: 100%;
+}
+
 body {
-	margin: 0;
 	align-items: center;
 	/* background-image: linear-gradient(rgba(255,255,255,0.55),rgba(255,255,255,0.55)), url('images/white.jpg'); */
 	background-color: #f5fafa;
@@ -14,10 +20,12 @@ h1, h2 {
 
 h1 {
 	font-size: 80px;
+	margin: 0px;
+	padding: 0px;
 }
 
 strong {
-	font-size: 1.3em;
+	/*font-size: 1.3em;*/
 }
 
 h2 {
@@ -35,20 +43,28 @@ h2 {
  	position: fixed;
   	top: 0;
   	width: 100%;
+  	padding-bottom: 42px;
 }
 
 #nav {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: center;
+	justify-content: center;*/
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	background-color: #333;	
 }
 
-#nav li {
+.nav_options {
 	padding: 10px;
+	float: right;
+	letter-spacing: 1px;
 }
 
-#nav li:hover {
+.nav_options:hover {
 	background-color: #C6E9FF;
 }
 
@@ -56,12 +72,24 @@ h2 {
 	color: white;
 }
 
+.logo {
+	padding: 10px;
+	float: left;
+}
+
 .welcome, #about_me {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
 	color: black;
-	border-style: none none outset none;
+	border-style: none;
+}
+
+.more_info {
+	width: 900px;
+	text-align: justify;
 }
 
 #contact, #projects {
@@ -71,15 +99,17 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	padding-bottom: 10px;
-	border-style: none none outset none;
+	border-style: none;
 }
 
 .welcome {
 	display: flex;
-	height: 650px;
+	flex-direction: column;
+	height: 100vh;
 	background-image: url('images/view.gif');
 	background-attachment: fixed;
 	background-size: cover; 
+	/*color: #fff;*/
 }
 
 .wrapper {
@@ -94,7 +124,7 @@ h2 {
 
 .left, .right {
 	margin: 30px;
-	margin-left: 70px;
+	margin-left: 150px;
 }
 
 .profile_picture {
@@ -144,3 +174,64 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;	
+	padding: 20px 20px;
+	/*transition: 0.6s;*/
+}
+
+.logo {
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+header .logo {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+	font-size: 2em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	/*transition: 0.6s;*/
+}
+
+header ul {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+header ul li {
+	position: relative;
+	list-style: none;
+}
+
+header ul li a {
+	position: relative;
+	margin: 0 15px;
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 500px;
+	padding: 0px;
+	/*transition: 0.6s;*/
+}
+
+
+
+
+
+
