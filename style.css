@@ -24,10 +24,6 @@ h1 {
 	padding: 0px;
 }
 
-strong {
-	/*font-size: 1.3em;*/
-}
-
 h2 {
 	margin-top: 20px;
 	margin-bottom: 0px;
@@ -160,6 +156,14 @@ ul {
 	justify-content: left;
 	text-align: left;
 	width: 700px;
+}
+
+.project_title {
+	font-size: 1.3em;
+}
+
+.project_date {
+	float: right;
 }
 
 .fa {
