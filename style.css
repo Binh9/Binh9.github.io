@@ -92,7 +92,7 @@ h2 {
 	text-align: justify;
 }
 
-#contact, #projects {
+#contact, #projects, #work_experience {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -153,7 +153,7 @@ ul {
   	list-style: none;
 }
 
-.project {
+.project, .work {
 	display: flex;
 	flex-direction: column;
 	align-items: left;
@@ -162,11 +162,11 @@ ul {
 	width: 700px;
 }
 
-.project_title {
+.project_title, .position_title {
 	font-size: 1.3em;
 }
 
-.project_date {
+.project_date, .work_date {
 	float: right;
 }
 
