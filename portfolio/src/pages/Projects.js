@@ -2,7 +2,7 @@ import React from 'react';
 
 function Projects(props) {
   return (
-    <div className='projects'>
+    <div id='projects' className='projects'>
       <h1>Projects</h1>
     </div>
   );
