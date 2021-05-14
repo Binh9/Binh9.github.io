@@ -4,7 +4,7 @@ function Home() {
   return (
     <div id='home' className='home'>
       <div className='nav-bar'>
-        <a class='logo' href='#home'>BL</a>
+        <a className='logo' href='#home'>BL</a>
         <ul>
           <li>
             <a href='#aboutme'>About Me</a>
@@ -22,7 +22,7 @@ function Home() {
       </div>
       <div className='hey-message'>
         <h2>Hey, I'm</h2>
-        <h1>Binh Le</h1>
+        <h1>Binh Le...</h1>
       </div> 
     </div>
   )
