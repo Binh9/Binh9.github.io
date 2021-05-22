@@ -8,18 +8,16 @@ GENERAL CSS
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-.home, .reports, .products, .aboutme, .contact, .experience, .projects {
+.home, .reports, .products, .aboutme, .experience, .projects {
   display: flex;
   height: 100vh;
+  min-height: 700px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(124, 124, 124);
-}
-
-.contact {
-  height: 30vh;
+  background-color: #f1f6f9;
 }
 
 h1 {
@@ -73,7 +71,7 @@ NAVIGATION BAR CSS
 	justify-content: space-between;
 	align-items: center;	
   padding: 20px 20px;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .logo {
@@ -118,26 +116,284 @@ ABOUT ME PAGE CSS
 --------------------------------------------------------------------------------------------------------------------------------
 */
 
-/* .aboutme {
-  padding: 0 150px;
-  border-style: solid;
-} */
-
 .aboutMeContainer {
   width: 80%;
   height: 100%;
   display: flex;
   flex-direction: row;
   border-style: solid;
-  border-width: 1px;
-  border-color: gray;
+  border-width: 0px;
+  border-color: #f1f6f9;
   background-color: white;
+  font-family: 'Source Code Pro', sans-serif;
 }
 
 .leftSide, .rightSide {
   width: 50%;
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.leftSide {
+  background-color: #394867;
+  color: white;
+  font-size: x-large;
+}
+
+.emailBlock {
+  margin-top: 30px;
+}
+
+.emailBlock a {
+  color: darkgray;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.emailBlock a:hover {
+  color: white
+}
+
+.resumeBlock a {
+  color: darkgray;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+
+.resumeBlock a:hover {
+  color: white
+}
+
+.avatar {
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.rightSide {
+  padding: 20px;
+  overflow-y: scroll;
+  justify-content: start;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+}
+
+.stats p {
+  background-color: #8B8982;
+  margin: 5px;
+  color: white;
+}
+
+.intro {
+  text-align: justify;
+  margin: 50px 0px;
+}
+
+.currentStatus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.currentStatus .update {
+  text-align: justify;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------
+EXPERIENCE PAGE CSS
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.experience {
+  height: 900px;
+  font-weight: normal;
+  background-color: #0f0f0f;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.experienceContainer {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.experienceHeader {
+  font-size: 4em;
+  letter-spacing: 1px;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.jobContainer {
+  width: 100%;
+  height: 205px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+.jobContainer .companyLogo {
+  height: 100%;
+  width: 30%;
+  max-width: 200px;
+}
+
+.jobContainer .jobDescription {
+  height: 100%;
+  width: 82%;
+  margin: 5px 10px;
+  overflow-y: scroll;
+}
+
+.jobDescription {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  list-style-position: inside;
+}
+
+.companyOverview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------
+PROJECTS PAGE CSS
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.projects {
+  height: 90vh;
+}
+
+.projectsContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.projectHeader {
+  font-size: 4em;
+  font-weight: 900;
+  letter-spacing: 1px;
+  font-family: 'Source Code Pro', sans-serif;
+}
+
+.projectCardsContainer {
+  width: 100%;
+  height: 250px;
+  margin: 30px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectCard {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  border-style: solid;
+  display: block;
+}
+
+.imageProject {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.projectCard:hover .overlay {
+  opacity: 1;
+}
+
+.projectDescription {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectDescription a {
+  color: white;
+}
+
+/*
+--------------------------------------------------------------------------------------------------------------------------------
+CONTACT PAGE CSS
+--------------------------------------------------------------------------------------------------------------------------------
+*/
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f6f9;
+  height: 44vh;
+  min-height: 400px;
+}
+
+.contactContainer {
+  width: 80%;
+  height: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactOptions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 200px;
+  margin: 25px 0px;
+}
+
+.contactOption {
+  height: 100%;
+  width: 400px;
+  border-style: solid;
+}
+
+.backToTopBlock {
+  margin: 25px 0px;
 }
