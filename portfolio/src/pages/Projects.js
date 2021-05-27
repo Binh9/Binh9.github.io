@@ -3,13 +3,14 @@ import covid from './../images/covid.png';
 import gotcha from './../images/gotcha.png';
 import apocalyse from './../images/apocalypseSim.png';
 import deadline from './../images/deadline.png';
+import * as AiIcons from 'react-icons/ai';
 
 function Projects(props) {
   return (
     <div id='projects' className='projects'>
       <div className='projectsContainer'>
         <div className='projectHeader'>
-          Projects I've worked on...
+          Projects...
         </div>
         <div className='projectCardsContainer'> 
           <div className='projectCard'>
@@ -64,7 +65,7 @@ function Projects(props) {
           </div>
         </div>
         <div className='githubBlock'>
-          Feel free to visit my <a href='https://github.com/Binh9'>GitHub *ICON* </a> for more projects I've worked on
+          Feel free to visit my <a href='https://github.com/Binh9'>GitHub <AiIcons.AiOutlineGithub/></a> for more things I've worked on :)
         </div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import avatar from './../images/avatar.jpeg';
 
-const ABOUT_ME = 'Hello! I\'m an aspiring software engineer. Soon to be a graduate from Northeastern University (January 2022). '
+const ABOUT_ME = 'Hello! I\'m an aspiring software engineer. Soon to be a graduate from Northeastern University (August 2022). '
       + 'I like learning about new tech, and I believe that the only limitation to its capabilities is our own imagination.';
 
 const LIKES = 'My hobbies include doing sports. I\'ve played basketball, volleyball, and tennis. Now, I\'m mostly playing soccer '
@@ -22,7 +22,7 @@ function AboutMe(props) {
             <a href='mailto:lebinhb98@gmail.com' > > lebinhb98@gmail.com</a>
           </div>
           <div className='resumeBlock'>
-            <a href='#nowhere'> > Resume</a>
+            <a href='images/BinhLe.pdf'> > Resume</a>
           </div>
           
         </div>

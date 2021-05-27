@@ -55,6 +55,14 @@ HOME PAGE CSS
   font-family: 'Kalam', sans-serif;
 }
 
+.logo {
+  text-shadow: 2px 2px 8px #db351b;
+}
+
+/* .home h1 {
+  text-shadow: 2px 2px 8px #db351b;
+} */
+
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 NAVIGATION BAR CSS
@@ -143,6 +151,10 @@ ABOUT ME PAGE CSS
   font-size: x-large;
 }
 
+.leftSide h2 {
+  /* text-shadow: 2px 2px 8px #db351b; */
+}
+
 .emailBlock {
   margin-top: 30px;
 }
@@ -172,6 +184,7 @@ ABOUT ME PAGE CSS
 .avatar {
   border-radius: 50%;
   margin: 15px;
+  border-style: inset;
 }
 
 .rightSide {
@@ -232,13 +245,15 @@ EXPERIENCE PAGE CSS
 
 .experienceHeader {
   font-size: 4em;
-  letter-spacing: 1px;
-  font-family: 'Source Code Pro', sans-serif;
+  letter-spacing: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 15px;
+  text-shadow: 6px 6px 0px rgba(214, 213, 213, 0.2);
 }
 
 .jobContainer {
   width: 100%;
-  height: 205px;
+  height: 200px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -246,13 +261,16 @@ EXPERIENCE PAGE CSS
   margin: 20px;
   border-style: solid;
   border-width: 1px;
-  border-color: gray;
+  border-color: white;
 }
 
 .jobContainer .companyLogo {
   height: 100%;
   width: 30%;
   max-width: 200px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
 }
 
 .jobContainer .jobDescription {
@@ -283,6 +301,7 @@ PROJECTS PAGE CSS
 
 .projects {
   height: 90vh;
+  background-color: #ebeeee;
 }
 
 .projectsContainer {
@@ -297,8 +316,9 @@ PROJECTS PAGE CSS
 .projectHeader {
   font-size: 4em;
   font-weight: 900;
-  letter-spacing: 1px;
-  font-family: 'Source Code Pro', sans-serif;
+  letter-spacing: 4px;
+  font-family: 'Ubuntu', sans-serif;
+  text-shadow: 6px 6px 0px rgba(202, 202, 202, 0.856);
 }
 
 .projectCardsContainer {
@@ -354,6 +374,15 @@ PROJECTS PAGE CSS
   color: white;
 }
 
+.githubBlock {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.githubBlock a {
+  text-decoration: none;
+  color: #db351b;
+}
+
 /*
 --------------------------------------------------------------------------------------------------------------------------------
 CONTACT PAGE CSS
@@ -364,12 +393,32 @@ CONTACT PAGE CSS
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1f6f9;
-  height: 44vh;
+  background-color: #ffffff;
+  height: 400px;
   min-height: 400px;
 }
 
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 4px;
+  font-size: 4em;
+  font-weight: 900;
+  text-shadow: 6px 6px 0px rgba(202, 202, 202, 0.856);
+}
+
+.contactSubheader {
+  margin-top: 8px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
 .contactContainer {
+  position: relative;
   width: 80%;
   height: 100%;
   min-height: 300px;
@@ -382,7 +431,7 @@ CONTACT PAGE CSS
 .contactOptions {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   height: 200px;
   margin: 25px 0px;
@@ -390,10 +439,42 @@ CONTACT PAGE CSS
 
 .contactOption {
   height: 100%;
-  width: 400px;
-  border-style: solid;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Ubuntu', sans-serif;
+  letter-spacing: 3px;
+}
+
+.contactOption a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactIcon {
+  width: 100px;
+  height: 100px;
+  color: rgb(116, 116, 116);
+}
+
+.contactIcon:hover {
+  color: #0f0f0f;
 }
 
 .backToTopBlock {
-  margin: 25px 0px;
+  position: absolute;
+  right: -20px;
+  bottom: 50px;
+}
+
+.bttButton {
+  width: 60px;
+  height: 60px;
+  color: #929292;
+}
+
+.bttButton:hover {
+  color: #db351b;
 }
