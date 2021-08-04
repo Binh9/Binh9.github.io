@@ -2,7 +2,7 @@ import React from 'react';
 import avatar from './../images/avatar.jpeg';
 import resume from './../images/BinhLe.pdf';
 
-const ABOUT_ME = 'Hello! I\'m an aspiring software engineer. Soon to be a graduate from Northeastern University (August 2022). '
+const ABOUT_ME = 'Hello! I\'m an aspiring software engineer. Soon to be a graduate from Northeastern University (December 2021). '
       + 'I like learning about new tech, and I believe that the only limitation to its capabilities is our own imagination.';
 
 const LIKES = 'My hobbies include doing sports. I\'ve played basketball, volleyball, and tennis. Now, I\'m mostly playing soccer '

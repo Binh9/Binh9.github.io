@@ -20,7 +20,7 @@ function Experience(props) {
                 <b>Wayfair</b>, Boston, MA
               </div>
               <div className='workDates'>
-                Jan. 2021 - Present
+                Jan. 2021 - Jun. 2021
               </div>
             </div>
             <div className='jobPosition'>
@@ -29,18 +29,18 @@ function Experience(props) {
             <div className='responsibilities'>
               <ul>
                 <li className='jobBullets'>
-                  Build an integrated dashboard with Java and React that displays issues linked to the user leveraging third-party 
+                  Built an integrated dashboard with Java and React that displays issues linked to the user leveraging third-party 
                   and internal APIs
                 </li>
                 <li className='jobBullets'>
-                Collaborate with another engineer to develop a service informing thousands of employees in the Contact Centers and 
+                Collaborated with another engineer to develop a service informing thousands of employees in the Contact Centers and 
                 Warehouses of the ongoing incidents; thus, streamlining their workflow
                 </li>
                 <li className='jobBullets'>
-                  Coordinate with business user to migrate the Quality Assurance team from the in-house project tracking tool
+                  Coordinated with business user to migrate the Quality Assurance team from the in-house project tracking tool
                 </li>
                 <li className='jobBullets'>
-                  Maintain internal applications written in PHP and JavaScript
+                  Maintained internal applications written in PHP and JavaScript
                 </li>
               </ul>
             </div>
