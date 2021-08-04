@@ -6,5 +6,8 @@
 - Resume
 - Contact info
 
+### Deployment tip
+Use gh-pages package to manage the deployment to Github Pages
+
 ### Deployed at
 https://binh9.github.io/
